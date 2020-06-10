@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 YOTUBE_URL="https://www.youtube.com/watch?v=T4SimnaiktU"
 UPLOAD_FROM=`youtube-dl -i --get-filename -o '%(title)s.%(ext)s' $YOTUBE_URL`
 youtube-dl -i -o '%(title)s.%(ext)s' $YOTUBE_URL
