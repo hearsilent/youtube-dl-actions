@@ -1,0 +1,11 @@
+  
+name: "YouTubeDrive"
+description: "Sync YouTube to Google Drive"
+
+runs:
+  using: docker
+  image: Dockerfile
+
+branding:
+  icon: 'upload-cloud'
+  color: 'gray-dark'
