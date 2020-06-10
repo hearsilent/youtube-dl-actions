@@ -1,7 +1,7 @@
 #!/bin/sh
 
 UPLOAD_TO="YouTube"
-UPLOAD_FROM=`youtube-dl -i --get-filename -o '%(title)s.%(ext)s' https://www.youtube.com/watch?v=T4SimnaiktU`
+UPLOAD_FROM=`youtube-dl -i --get-filename -o '/%(title)s.%(ext)s' https://www.youtube.com/watch?v=T4SimnaiktU`
 echo $UPLOAD_FROM
 
 curl -X POST \
