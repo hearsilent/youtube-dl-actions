@@ -10,4 +10,4 @@ RUN chmod a+rx /usr/local/bin/youtube-dl
 
 WORKDIR /
 COPY entrypoint.sh ./
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ["sh", "/entrypoint.sh"]
